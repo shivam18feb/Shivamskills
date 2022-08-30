@@ -1,0 +1,37 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<title>Contact</title>
+
+<h1 class="text-center mt-5" style="color: black;">Contact Here . . .<h1>
+
+<div class="jumbotron jumbotron-fluid"style="margin-top: 50px;">
+ 	<div class="container">
+		<form method="post" action="/">
+		{% csrf_token %}
+
+	  		<div class="row" >
+	    		<div class="col" style="margin-top: 50px;">
+	      			<input type="text" class="form-control" placeholder="First name" style="height: 50px;" name="fistname">
+	   			</div>
+			    <div class="col"style="margin-top: 50px;">
+			      <input type="text" class="form-control" placeholder="Last name" style="height: 50px;" name="lastname">
+			    </div>
+	  		</div>
+
+			<div class="form-group"style="margin-top: 50px;">
+			    
+			    <input type="email" class="form-control"id="exampleFormControlInput1" placeholder="Enter Your Mail id " style="height: 50px;" name="email" value="required">
+			</div>
+			<div class="form-group" style="margin-top: 50px;">
+		    	<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Please enter Your Messages here" style="height: 200px;" name="msg"></textarea>
+		    </div>
+		    <div class="text-center">
+		    	<button type="submit" class="btn btn-secondary btn-lg" style="margin-top: 50px;">Send Now</button>
+		    </div>
+		</form>
+	</div>
+</div>
+	
+
+{% endblock content %}

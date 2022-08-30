@@ -1,0 +1,42 @@
+/* Font */
+.st-font{
+    font-family: 'Courier New';
+}
+.zoom {
+    transition: transform .2s;
+    margin: 0;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+  }
+  
+  html,
+  body{
+      height: 100%;
+      background-color: hsl(210%, 2%, 22%);
+  }
+
+  .container-fluid{
+      min-height: 100%;
+  }
+
+  .i-color{
+      color: rgba(232, 253, 45, 0.822);
+  }
+  .ss-color{
+      color: black;
+  }
+   .ff-size {
+       font-size: medium;
+
+    }
+    a.nav-link {
+        color: whitesmoke;
+
+    }
+    a.nav-link:hover {
+        color: red;
+    }
